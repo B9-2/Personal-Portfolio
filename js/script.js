@@ -1,21 +1,29 @@
-// Load saved theme
+// Theme toggle: dark mode by default
 const toggleBtn = document.getElementById("themeToggle");
 
-if (localStorage.getItem("theme") === "dark") {
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+  document.body.classList.remove("dark");
+  toggleBtn.textContent = "🌙";
+  toggleBtn.setAttribute("aria-label", "Switch to dark mode");
+} else {
   document.body.classList.add("dark");
-  toggleBtn.textContent = "Light mode";
+  toggleBtn.textContent = "☀️";
+  toggleBtn.setAttribute("aria-label", "Switch to light mode");
 }
 
-// Dark/Light mode toggle
 toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 
   if (document.body.classList.contains("dark")) {
-    toggleBtn.textContent = "Light mode";
     localStorage.setItem("theme", "dark");
+    toggleBtn.textContent = "☀️";
+    toggleBtn.setAttribute("aria-label", "Switch to light mode");
   } else {
-    toggleBtn.textContent = "Dark mode";
     localStorage.setItem("theme", "light");
+    toggleBtn.textContent = "🌙";
+    toggleBtn.setAttribute("aria-label", "Switch to dark mode");
   }
 });
 
