@@ -1,93 +1,156 @@
 <!DOCTYPE html>
-<html lang="en" autocomplete="off">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdulrahim Albijadi | Personal Portfolio</title>
+    <title>Abdulrahim Albijadi | Software Engineering Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" />
-    <script defer src="js/script.js?v=10"></script>
+    <script defer src="js/script.js?v=20"></script>
   </head>
-
   <body class="dark">
-    <button id="themeToggle" type="button" aria-label="Switch to light mode"></button>
-
-    <main id="container">
-      <header class="hero" id="home">
-        <div class="hero-text">
-          <h1>Abdulrahim Albijadi</h1>
-          <p class="subtitle">
-            Software Engineering Student | Full-Stack Development | Databases | Machine Learning
-          </p>
-
-          <!-- <a
-            href="assets/CV.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="cv-button"
-          >
-            View CV
-          </a> -->
-        </div>
-      </header>
-
-      <nav class="navbar">
-        <a href="#home">Home</a>
+    <button id="themeToggle" type="button" aria-label="Switch theme"></button>
+    <nav>
+      <div class="container nav-inner">
+      <div class="logo">
+        Abdulrahim.
+      </div>
+      <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#github-projects">GitHub</a>
         <a href="#contact">Contact</a>
-      </nav>
-
-      <section id="about">
-        <h2>About Me</h2>
+      </div>
+      </div>
+    </nav>
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-content">
+          <div class="badge">
+          ✦ Software Engineering Portfolio
+          </div>
+          <h1>
+          Abdulrahim
+          <br>
+          <span class="accent">Albijadi</span>
+        </h1>
         <p>
-          I am a Software Engineering student at King Fahd University of Petroleum & Minerals
-          (KFUPM), with experience in full-stack web development, databases, and machine learning.
+          Software Engineering student at KFUPM focused on full-stack development,
+          scalable database systems, and intelligent machine learning applications.
         </p>
-        <p>
-          I enjoy building practical software systems that combine clean user interfaces,
-          backend APIs, and database-driven functionality.
-        </p>
-      </section>
-
-      <section id="skills">
-        <h2>Skills</h2>
-        <p class="section-note">
-          Technical skills I have learned and applied through coursework and projects.
-        </p>
-
-        <div class="skills-grid">
-          <span>Python</span>
-          <span>Java</span>
-          <span>JavaScript</span>
-          <span>C</span>
-          <span>SQL</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>React</span>
-          <span>Node.js</span>
-          <span>Express</span>
-          <span>RESTful APIs</span>
-          <span>API Integration</span>
-          <span>MySQL</span>
-          <span>MongoDB</span>
-          <span>MongoDB Atlas</span>
-          <span>Git</span>
-          <span>GitHub</span>
-          <span>Vercel</span>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            View Projects →
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Contact Me
+          </a>
         </div>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <p class="section-note">
-          Use the filter, sort, and search options to explore selected projects.
+      </div>
+      <div class="glass hero-card">
+        <div class="hero-icon">
+          ⚡
+        </div>
+        <h3>Software Engineering</h3>
+        <p>
+          Designing modern software systems with performance,
+          scalability, and clean user experiences.
         </p>
-
-        <div class="project-controls">
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <small>ABOUT ME</small>
+          <h2>Building elegant digital systems.</h2>
+          <p>
+            I am a Software Engineering student at King Fahd University of Petroleum & Minerals (KFUPM)
+            with experience in full-stack web development, backend APIs, databases,
+            and machine learning systems.
+          </p>
+        </div>
+        <div class="grid-3">
+          <div class="glass card">
+            <div class="card-icon">🌐</div>
+            <h3>Web Engineering</h3>
+            <p>
+              Responsive frontend systems, scalable web applications,
+              and modern user interfaces.
+            </p>
+          </div>
+          <div class="glass card">
+            <div class="card-icon">🗄️</div>
+            <h3>Database Systems</h3>
+            <p>
+              Database architecture, SQL optimization,
+              MongoDB integration, and backend engineering.
+            </p>
+          </div>
+          <div class="glass card">
+            <div class="card-icon">🧠</div>
+            <h3>Machine Learning</h3>
+            <p>
+              Classification models, intelligent systems,
+              data preprocessing, and predictive analytics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <div class="section-title">
+          <small>SKILLS</small>
+          <h2>Technology Stack</h2>
+        </div>
+        <div class="grid-3">
+          <div class="glass card">
+            <h3>Frontend & Backend</h3>
+            <div class="skills-list">
+              <div class="skill-pill">React</div>
+              <div class="skill-pill">JavaScript</div>
+              <div class="skill-pill">Node.js</div>
+              <div class="skill-pill">Express</div>
+              <div class="skill-pill">REST APIs</div>
+              <div class="skill-pill">HTML/CSS</div>
+            </div>
+          </div>
+          <div class="glass card">
+            <h3>Databases</h3>
+            <div class="skills-list">
+              <div class="skill-pill">MongoDB</div>
+              <div class="skill-pill">MySQL</div>
+              <div class="skill-pill">SQL</div>
+              <div class="skill-pill">Database Design</div>
+              <div class="skill-pill">MongoDB Atlas</div>
+            </div>
+          </div>
+          <div class="glass card">
+            <h3>Programming & ML</h3>
+            <div class="skills-list">
+              <div class="skill-pill">Python</div>
+              <div class="skill-pill">Java</div>
+              <div class="skill-pill">C</div>
+              <div class="skill-pill">Scikit-learn</div>
+              <div class="skill-pill">TensorFlow</div>
+              <div class="skill-pill">Git/GitHub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <small>PROJECTS</small>
+          <h2>Featured Engineering Work</h2>
+        </div>
+        <div class="project-controls glass">
           <div>
-            <label for="filterProjects">Filter projects</label>
+            <label for="filterProjects">Filter Projects</label>
             <select id="filterProjects">
               <option value="all">All</option>
               <option value="web">Web</option>
@@ -95,137 +158,148 @@
               <option value="ml">Machine Learning</option>
             </select>
           </div>
-
           <div>
-            <label for="sortProjects">Sort projects</label>
+            <label for="sortProjects">Sort Projects</label>
             <select id="sortProjects">
-              <option value="default">Default order</option>
-              <option value="az">A to Z</option>
-              <option value="za">Z to A</option>
+              <option value="default">Default</option>
+              <option value="az">A → Z</option>
+              <option value="za">Z → A</option>
             </select>
           </div>
-
           <div>
-            <label for="projectSearch">Search projects</label>
-            <input type="text" id="projectSearch" placeholder="Search projects..." />
+            <label for="projectSearch">Search Projects</label>
+            <input type="text" id="projectSearch" placeholder="Search projects...">
           </div>
         </div>
-
-        <p id="emptyMessage" style="display: none;">No projects found.</p>
-
+        <p id="emptyMessage" style="display:none;">
+          No projects found.
+        </p>
         <div id="projectList" class="project-grid">
-          <article class="project-card" data-category="web" data-title="KFUPM Events Management System">
+          <article class="glass project-card" data-category="web" data-title="KFUPM Events Management System">
             <div class="project-content">
+              <div class="project-category">
+                Full-Stack Web Application
+              </div>
               <h3>KFUPM Events Management System</h3>
-              <span class="project-tag">Full-Stack Web Application</span>
               <p>
                 A full-stack event management platform supporting event creation,
-                submission, tracking, and admin approval workflows.
+                submission, approval workflows, and role-based functionality.
               </p>
-              <p>
-                Built role-based organizer and admin functionality using React,
-                Node.js/Express, and MongoDB.
-              </p>
+              <div class="skills-list">
+                <div class="skill-pill">React</div>
+                <div class="skill-pill">Node.js</div>
+                <div class="skill-pill">Express</div>
+                <div class="skill-pill">MongoDB</div>
+              </div>
             </div>
-
             <img
               src="assets/images/KFUPMEventMainLatest.png"
-              alt="KFUPM Events Management System screenshot"
-              loading="lazy"
-            />
+              alt="KFUPM Events System"
+            >
           </article>
-
-          <article class="project-card" data-category="database" data-title="Bookstore Management System">
+          <article class="glass project-card" data-category="database" data-title="Bookstore Management System">
             <div class="project-content">
+              <div class="project-category">
+                Database-Driven Web Application
+              </div>
               <h3>Bookstore Management System</h3>
-              <span class="project-tag">Database-Driven Web Application</span>
               <p>
-                Designed and implemented a normalized relational database schema
-                for a bookstore system.
+                Backend-driven bookstore platform using Flask and MySQL
+                with normalized schema design and REST APIs.
               </p>
-              <p>
-                Built a backend system using Python Flask and MySQL, with RESTful APIs
-                for authentication, book search, and order management.
-              </p>
+              <div class="skills-list">
+                <div class="skill-pill">Python</div>
+                <div class="skill-pill">Flask</div>
+                <div class="skill-pill">MySQL</div>
+                <div class="skill-pill">REST APIs</div>
+              </div>
             </div>
-
             <img
               src="assets/images/BookstoreMySQL.png"
-              alt="Bookstore Management System database screenshot"
-              loading="lazy"
-            />
+              alt="Bookstore System"
+            >
           </article>
-
-          <article class="project-card" data-category="ml" data-title="Job Application Outcome Prediction System">
+          <article class="glass project-card" data-category="ml" data-title="Job Application Outcome Prediction System">
             <div class="project-content">
+              <div class="project-category">
+                Machine Learning Classification
+              </div>
               <h3>Job Application Outcome Prediction System</h3>
-              <span class="project-tag">Machine Learning Classification</span>
               <p>
-                Developed and compared machine learning models including KNN, SVM,
-                Logistic Regression, and DNN to predict job application outcomes.
+                Compared KNN, SVM, Logistic Regression, and DNN models
+                for job application outcome prediction.
               </p>
-              <p>
-                Performed data preprocessing, feature engineering, and model evaluation
-                using metrics such as accuracy and precision.
-              </p>
+              <div class="skills-list">
+                <div class="skill-pill">Python</div>
+                <div class="skill-pill">Scikit-learn</div>
+                <div class="skill-pill">TensorFlow</div>
+                <div class="skill-pill">Data Processing</div>
+              </div>
             </div>
-
             <img
               src="assets/images/JupyterNB-PythonSVM.jpeg"
-              alt="Job Application Outcome Prediction System screenshot"
-              loading="lazy"
-            />
+              alt="Machine Learning Project"
+            >
           </article>
         </div>
-      </section>
-
-      <section id="github-projects">
-        <div class="section-top">
-          <div>
-            <h2>GitHub Repositories</h2>
-            <p class="section-note">
-              Repositories loaded automatically from my GitHub profile using the GitHub API.
-            </p>
-          </div>
+      </div>
+    </section>
+    <section id="github-projects">
+      <div class="container">
+        <div class="section-title">
+          <small>GITHUB</small>
+          <h2>Repository Showcase</h2>
+          <p>
+            Repositories loaded dynamically using the GitHub API.
+          </p>
         </div>
-
         <p id="repoStatus"></p>
         <div id="repoList" class="repo-grid"></div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p class="section-note">Use the form below to send a message.</p>
-
-        <form id="contactForm">
-          <div>
-            <label for="myName">Name</label>
-            <input type="text" name="myName" id="myName" placeholder="Your name" required />
-          </div>
-
-          <div>
-            <label for="myEmail">Email</label>
-            <input type="email" name="myEmail" id="myEmail" placeholder="you@example.com" required />
-          </div>
-
-          <div>
-            <label for="myMessage">Message</label>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <small>CONTACT</small>
+          <h2>Let’s build something exceptional.</h2>
+        </div>
+        <div class="glass contact-card">
+          <form id="contactForm">
+            <input
+              type="text"
+              name="myName"
+              id="myName"
+              placeholder="Your Name"
+              required
+            >
+            <input
+              type="email"
+              name="myEmail"
+              id="myEmail"
+              placeholder="Your Email"
+              required
+            >
             <textarea
               name="myMessage"
               id="myMessage"
-              rows="5"
-              placeholder="I would like to contact you regarding..."
+              rows="6"
+              placeholder="Your Message"
               required
             ></textarea>
-          </div>
-
-          <button type="submit">Send Message</button>
-        </form>
-
-        <p id="formMessage"></p>
-      </section>
-    </main>
-
-    <button id="scrollTopBtn" type="button" aria-label="Scroll to top">↑</button>
+            <button type="submit" class="btn btn-primary">
+              Send Message →
+            </button>
+            <p id="formMessage"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <button id="scrollTopBtn" type="button" aria-label="Scroll to top">
+    ↑
+  </button>
+  <footer>
+    © 2026 Abdulrahim Albijadi — Crafted with modern luxury aesthetics.
+  </footer>
   </body>
 </html>
