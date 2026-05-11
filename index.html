@@ -23,6 +23,7 @@
       </div>
       <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#github-projects">GitHub</a>
@@ -77,7 +78,7 @@
           </p>
         </div>
         <div class="grid-3">
-          <div class="glass card">
+          <div class="glass card reveal">
             <div class="card-icon">◈</div>
             <h3>Web Engineering</h3>
             <p>
@@ -85,7 +86,7 @@
               and modern user interfaces.
             </p>
           </div>
-          <div class="glass card">
+          <div class="glass card reveal">
             <div class="card-icon">⬢</div>
             <h3>Database Systems</h3>
             <p>
@@ -93,7 +94,7 @@
               MongoDB integration, and backend engineering.
             </p>
           </div>
-          <div class="glass card">
+          <div class="glass card reveal">
             <div class="card-icon">◉</div>
             <h3>Machine Learning</h3>
             <p>
@@ -104,6 +105,45 @@
         </div>
       </div>
     </section>
+    <section id="education">
+  <div class="container">
+    <div class="section-title">
+      <small>EDUCATION</small>
+      <h2>Academic Journey</h2>
+      <p>
+        My academic background and international exchange experience.
+      </p>
+    </div>
+
+    <div class="timeline">
+
+      <div class="glass timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2022 — Present</span>
+          <h3>KFUPM — Software Engineering</h3>
+          <p>
+            Bachelor’s degree in Software Engineering at
+            King Fahd University of Petroleum & Minerals.
+          </p>
+        </div>
+      </div>
+
+      <div class="glass timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025</span>
+          <h3>Texas A&M University</h3>
+          <p>
+            Participated in the international exchange program
+            at Texas A&M University in the United States.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    </section>
     <section id="skills">
       <div class="container">
         <div class="section-title">
@@ -111,7 +151,7 @@
           <h2>Technology Stack</h2>
         </div>
         <div class="grid-3">
-          <div class="glass card">
+          <div class="glass card reveal">
             <h3>Frontend & Backend</h3>
             <div class="skills-list">
               <div class="skill-pill">React</div>
@@ -122,7 +162,7 @@
               <div class="skill-pill">HTML/CSS</div>
             </div>
           </div>
-          <div class="glass card">
+          <div class="glass card reveal">
             <h3>Databases</h3>
             <div class="skills-list">
               <div class="skill-pill">MongoDB</div>
@@ -132,7 +172,7 @@
               <div class="skill-pill">MongoDB Atlas</div>
             </div>
           </div>
-          <div class="glass card">
+          <div class="glass card reveal">
             <h3>Programming & ML</h3>
             <div class="skills-list">
               <div class="skill-pill">Python</div>
@@ -181,7 +221,7 @@
           No projects found.
         </p>
         <div id="projectList" class="project-grid">
-          <article class="glass project-card" data-category="web" data-title="KFUPM Events Management System">
+          <article class="glass project-card reveal" data-category="web" data-title="KFUPM Events Management System">
             <div class="project-content">
               <div class="project-category">
                 Full-Stack Web Application
@@ -203,7 +243,7 @@
               alt="KFUPM Events System"
             >
           </article>
-          <article class="glass project-card" data-category="database" data-title="Bookstore Management System">
+          <article class="glass project-card reveal" data-category="database" data-title="Bookstore Management System">
             <div class="project-content">
               <div class="project-category">
                 Database-Driven Web Application
@@ -225,7 +265,7 @@
               alt="Bookstore System"
             >
           </article>
-          <article class="glass project-card" data-category="ml" data-title="Job Application Outcome Prediction System">
+          <article class="glass project-card reveal" data-category="ml" data-title="Job Application Outcome Prediction System">
             <div class="project-content">
               <div class="project-category">
                 Machine Learning Classification
@@ -266,42 +306,76 @@
       </div>
     </section>
     <section id="contact">
-      <div class="container">
-        <div class="section-title">
-          <small>CONTACT</small>
-          <h2>Let’s build something exceptional.</h2>
-        </div>
-        <div class="glass contact-card">
-          <form id="contactForm">
-            <input
-              type="text"
-              name="myName"
-              id="myName"
-              placeholder="Your Name"
-              required
-            >
-            <input
-              type="email"
-              name="myEmail"
-              id="myEmail"
-              placeholder="Your Email"
-              required
-            >
-            <textarea
-              name="myMessage"
-              id="myMessage"
-              rows="6"
-              placeholder="Your Message"
-              required
-            ></textarea>
-            <button type="submit" class="btn btn-primary">
-              Send Message →
-            </button>
-            <p id="formMessage"></p>
-          </form>
-        </div>
+  <div class="container">
+    <div class="section-title">
+      <small>CONTACT</small>
+      <h2>Let’s build something exceptional.</h2>
+    </div>
+
+    <div class="glass contact-card reveal">
+
+      <div class="contact-links">
+
+        <a
+          href="mailto:abdulraheem6421@gmail.com"
+          class="contact-link"
+        >
+          Email
+        </a>
+
+        <a
+          href="https://github.com/B9-2"
+          target="_blank"
+          class="contact-link"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="Abdulrahim Albijadi"
+          target="_blank"
+          class="contact-link"
+        >
+          LinkedIn
+        </a>
+
       </div>
-    </section>
+
+      <form id="contactForm">
+        <input
+          type="text"
+          name="myName"
+          id="myName"
+          placeholder="Your Name"
+          required
+        >
+
+        <input
+          type="email"
+          name="myEmail"
+          id="myEmail"
+          placeholder="Your Email"
+          required
+        >
+
+        <textarea
+          name="myMessage"
+          id="myMessage"
+          rows="6"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit" class="btn btn-primary">
+          Send Message →
+        </button>
+
+        <p id="formMessage"></p>
+      </form>
+
+    </div>
+  </div>
+</section>
   </main>
   <button id="scrollTopBtn" type="button" aria-label="Scroll to top">
     ↑

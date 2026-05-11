@@ -121,3 +121,47 @@ scrollBtn.addEventListener('click', () => {
     behavior: 'smooth',
   });
 });
+// Reveal animation
+
+const revealElements = document.querySelectorAll('.reveal');
+
+function revealOnScroll() {
+  revealElements.forEach((element) => {
+    const windowHeight = window.innerHeight;
+    const revealTop = element.getBoundingClientRect().top;
+
+    if (revealTop < windowHeight - 100) {
+      element.classList.add('active');
+    }
+  });
+}
+
+window.addEventListener('scroll', revealOnScroll);
+
+revealOnScroll();
+
+
+// Active navbar highlighting
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+
+    if (window.scrollY >= sectionTop - 160) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove('active');
+
+    if (link.getAttribute('href') === `#${current}`) {
+      link.classList.add('active');
+    }
+  });
+});

@@ -434,3 +434,115 @@ select {
   background-size: 6px 6px;
   background-repeat: no-repeat;
 }
+/* EDUCATION TIMELINE */
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 24px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 24px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(96,165,250,0.25);
+}
+
+.timeline-item {
+  position: relative;
+  padding: 28px 28px 28px 70px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 15px;
+  top: 34px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--blue-light);
+  box-shadow: var(--glow);
+}
+
+.timeline-date {
+  color: var(--blue-light);
+  font-size: 14px;
+  letter-spacing: 0.05em;
+}
+
+/* CONTACT LINKS */
+
+.contact-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.contact-link {
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.04);
+  transition: 0.25s ease;
+}
+
+.contact-link:hover {
+  border-color: rgba(96,165,250,0.45);
+  background: rgba(59,130,246,0.12);
+  transform: translateY(-2px);
+}
+
+/* FORM SPACING */
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* SELECT ARROW SPACING */
+
+select {
+  padding-right: 54px;
+}
+
+/* REVEAL ANIMATION */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ACTIVE NAVBAR */
+
+.nav-links a.active {
+  color: var(--blue-light);
+}
+
+/* BETTER CARD ICONS */
+
+.card-icon {
+  background:
+    linear-gradient(
+      145deg,
+      rgba(59,130,246,0.2),
+      rgba(96,165,250,0.05)
+    );
+
+  border: 1px solid var(--border);
+}
